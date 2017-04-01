@@ -93,7 +93,7 @@ function showAnswer(status) {
 	} else {
 		code.className +="failure";
 	}
-	code.innerHTML='<strong>'+answer.value+'</strong>';
+	code.innerHTML=answer.value;
 }
 
 function showReplay() {
