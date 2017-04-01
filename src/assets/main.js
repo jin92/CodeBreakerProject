@@ -16,7 +16,7 @@ function guess() {
     } else {
     	attempt.value++;
     	//typeof 
-    	//console.log(attempt.value);
+    	//console.log(answer.value);
     	//let result = getResults(input.value);
     	if(getResults(input.value)) {
     		setMessage("You Win! :)");
@@ -88,10 +88,10 @@ function getResults(input) {
 
 function showAnswer(status) {
 	let code = document.getElementById('code');
-	if(status=true) {
-		code.className +="success";	
+	if(status) {
+		code.className +=" success";	
 	} else {
-		code.className +="failure";
+		code.className +=" failure";
 	}
 	code.innerHTML=answer.value;
 }
